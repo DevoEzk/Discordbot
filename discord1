@@ -24,8 +24,7 @@ async def heh(ctx, count_number=10):
     await ctx.send("he" * count_number) # $heh 100
 
 @bot.command()
-async def repeat(ctx, times: 10, content="repeating..."):
-    for i in range(times):
-        await ctx.send(content)
+async def adding(ctx, left: 2, right: 5):
+    await ctx.send(left + right)
 
 bot.run(token)
